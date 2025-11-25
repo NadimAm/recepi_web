@@ -1,4 +1,4 @@
-
+import Image from "next/image"
 
 async function getsingle (getcurrentid){
     const res = await fetch(`https://dummyjson.com/recipes/${getcurrentid}`)
@@ -13,7 +13,10 @@ export default async function page({params}) {
   return (
 <div className= " flex flex-col bg-gray-100 items-center  justify-center md:flex-row ">
  <div className="max-w-lg mt-4 mb-4 bg-white rounded-lg overflow-hidden shadow-lg ">
-    <img className="w-full  object-cover" src={singlerecepi.image} alt="Recipe Image" />
+    <Image className="w-full  object-cover" 
+    height={800}
+    width={500}
+    src={singlerecepi.image} alt="Recipe Image" />
  </div>
     <div className="p-6">
       <h2 className="text-3xl font-bold text-gray-500">{singlerecepi.name}</h2>
