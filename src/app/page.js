@@ -7,7 +7,7 @@ export default function Home() {
      <div >
 
      <h2 className="text-5xl text-white font-bold">SG Foods</h2> 
-     <p className="text-white font-semibold mb-4">"It's Delicious" 😋 !</p>
+     <p className="text-white font-semibold mb-4">&quot;It&apos;s Delicious&quot; 😋 !</p>
       <Link  href={'recepi'} className="bg-white rounded-md p-2 mt-3 font-sarif" >Try Our Recipes</Link>
       </div>
       
